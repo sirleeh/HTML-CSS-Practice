@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder's Club Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Coder's Club</h1>
+        <p><i>Join Coder's Club and develop your programing skills.</i></p>
+        <p>Complete the registration form below.</p>
+    </header>
+    <hr>
+    <main>
+        <h2><u>Student's Registration Form</u></h2>
+        <!--1. action specifies the destination where the form data should be submitted.
+# means the current page.
+2. method="get"
+method specifies how the browser sends the form data.-->
+        <form action="#"method="get">
+        <label for="full_name">Full Name:</label>
+        <input type="text"id="full_name"name="full_name"required>
+        <br><br>
+
+        <label for="email">Email Address</label>
+        <input type="text"id="email"name="email"required>
+        <br><br>
+
+        <!--Course Selection-->
+
+        <label for="course">Select Your Course:</label>
+        <select name="course" id="course" required>
+        <option value="">Choose Your Course</option>
+        <option value="computer_science">Computer Science</option>
+        <option value="information_technology">Information Technology</option>
+        <option value="computer_networking">Computer Networking</option>
+        <option value="computer_programming">Computer Programming</option>
+        <option value="cyber_security">Cyber Security</option>
+    </select>
+        <br><br>
+        <p><b>Which area of technology interests you most!</b></p>
+        <input type="radio" name="interest" id="web"value="web_development">
+        <label for="web">Web Development</label>
+        <br>
+        <input type="radio" name="interest" id="mobile"value="mobile_app_development">
+        <label for="mobile">Mobile App Development</label>
+        <br>
+        <input type="radio" name="interest" id="security"value="cyber_security">
+        <label for="security">Cyber Security</label>
+        <br>
+        <input type="radio" name="interest" id="ai"value="artificial_intelligence">
+        <label for="ai">Artificial Intelligence</label>
+        <br><br>
+
+        <!--Confirmation-->
+
+        <input type="checkbox" name="confirm" id="confirm"required>
+        <label for="confirm">I confirm that the information provided is correct.</label>
+        <br><br>
+
+        <button type="Submit">Register Now</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p><i>Coder's Club | 2026</i></p>
+    </footer>
+    
+    
+</body>
+</html>
