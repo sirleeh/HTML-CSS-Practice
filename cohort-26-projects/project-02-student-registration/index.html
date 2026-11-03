@@ -7,23 +7,25 @@
 </head>
 <body>
     <header>
+        <section>
         <h1>Welcome to Coder's Club</h1>
-        <p><i>Join Coder's Club and develop your programing skills.</i></p>
-        <p>Complete the registration form below.</p>
+        <p>Join Coder's Club and develop your programing skills.</p>
+    </section>
     </header>
+    
     <hr>
+
     <main>
-        <h2><u>Student's Registration Form</u></h2>
-        <!--1. action specifies the destination where the form data should be submitted.
-# means the current page.
-2. method="get"
-method specifies how the browser sends the form data.-->
-        <form action="#"method="get">
+        <section>
+            <h2>Student's Registration Form.</h2>
+            <p>Complete the registration form below.</p>
+
+        <form action="">
         <label for="full_name">Full Name:</label>
         <input type="text"id="full_name"name="full_name"required>
         <br><br>
 
-        <label for="email">Email Address</label>
+        <label for="email">Email Address:</label>
         <input type="text"id="email"name="email"required>
         <br><br>
 
@@ -39,20 +41,27 @@ method specifies how the browser sends the form data.-->
         <option value="cyber_security">Cyber Security</option>
     </select>
         <br><br>
-        <p><b>Which area of technology interests you most!</b></p>
-        <input type="radio" name="interest" id="web"value="web_development">
+
+        <p>Which area of technology interests you most!</p>
+        <fieldset>
+            <input type="radio" name="interest" id="web"value="web_development">
         <label for="web">Web Development</label>
         <br>
+
         <input type="radio" name="interest" id="mobile"value="mobile_app_development">
         <label for="mobile">Mobile App Development</label>
         <br>
+
         <input type="radio" name="interest" id="security"value="cyber_security">
         <label for="security">Cyber Security</label>
         <br>
+
         <input type="radio" name="interest" id="ai"value="artificial_intelligence">
         <label for="ai">Artificial Intelligence</label>
         <br><br>
 
+        </fieldset>
+        
         <!--Confirmation-->
 
         <input type="checkbox" name="confirm" id="confirm"required>
@@ -60,13 +69,17 @@ method specifies how the browser sends the form data.-->
         <br><br>
 
         <button type="Submit">Register Now</button>
+        <br><br>
         </form>
+        </section>
+        
     </main>
-    <hr>
+    
     <footer>
-        <p><i>Coder's Club | 2026</i></p>
+        <br><br>
+        <hr>
+        <p>Coder's Club | 2026</p>
     </footer>
-    
-    
+     
 </body>
 </html>
